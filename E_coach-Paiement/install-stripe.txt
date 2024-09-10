@@ -1,0 +1,19 @@
+1.  creer son compte stripe
+2.  ajouter un produit dans le compte
+3.  cliquer sur developpeur et copie la Cles API
+.   installer stripe avec la commande "npm install stripe --save
+" ou "npm install -g stripe-cli"
+
+.   ajouter le path de stripe dans la variable d'environnement exemple "C:\Users\yombafrank\AppData\Roaming\npm\node_modules\stripe-cli\node_modules\.bin"
+4.  on ouvre le projet et tape la commande "npm install express stripe ejs dotenv" pour installer stripe 
+ejs et dotenv si c'est pas encore installer.
+
+5. on creer un fichier index.js ou on vas ecrire le code 
+
+6. on met la cles secret de l'api dans le fichier .env
+
+7.  la comande "node index"(c'est poour lancer index.js)
+
+8.   creer le dossier view a la racine pour les vues et ecrire sa vu dans index.ejs
+
+9.   c (nodemon : C'est le nom du package à installer. Nodemon est un outil qui surveille les modifications apportées à vos fichiers et redémarre automatiquement votre application Node.js lorsqu'un fichier est modifié.)

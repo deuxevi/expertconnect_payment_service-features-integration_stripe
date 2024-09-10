@@ -1,0 +1,4 @@
+// creerson compte paypal
+
+//installer paypal dans son projet
+npm install paypal-rest-sdk

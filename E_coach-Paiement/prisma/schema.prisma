@@ -1,0 +1,32 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+
+
+//Ceci définit un modèle simple avec un champ , et .Useridnameemail
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+
+model Transaction {
+  id_transaction           Int      @id @default(autoincrement())
+  montant                  String
+  date_initiation_transaction DateTime @default(now())
+  date_validation_transaction DateTime?
+  num_mode_paiement        String
+  type_transaction         String
+  type_transaction      String?
+  id_utilisateur           String
+  statut                    String
+  ref_transaction          String
+}
